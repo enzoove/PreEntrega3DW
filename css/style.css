@@ -37,6 +37,16 @@ body {
   background-image: url(../../img/assets/background.webp);
 }
 
+.navbar-toggler {
+  border: 2px solid #6c5ce7;
+  border-radius: 10px;
+  padding: 3px 5px;
+}
+
+.navbar-toggler-icon {
+  filter: invert(25%);
+}
+
 .navLink {
   text-decoration: none;
   color: rgba(0, 206, 203, 0.8431372549);
