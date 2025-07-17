@@ -1,0 +1,136 @@
+@font-face {
+    font-family: PressStart2P;
+    src: url(../fonts/Press_Start_2P/PressStart2P-Regular.ttf);
+}
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf)
+}
+
+$colorBlanco: #ffffff;
+$colorNegro: #000000;
+$colorPrimario: #6c5ce7;
+$colorSecundario: #00cec9;
+
+.flexBasico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonBasico{
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    font-family: OpenSans;
+}
+.botonBasico:hover{
+    background-color: $colorSecundario;
+    color: $colorPrimario;
+}
+
+body{
+    background-image: url(../img/assets/background.webp);
+    color: $colorBlanco;
+}
+.logo{
+    max-width: 80%;
+    max-height: 70px;
+}
+
+/* Index */
+.tituloInicio{
+    font-size: 6rem;
+    color: $colorPrimario;
+    font-family: PressStart2P;
+    text-align: center;
+    margin: 20px;
+}
+.tituloInicio span{
+    color: $colorSecundario;
+}
+.eslogan{
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.destacados{
+    @extend .flexBasico;
+    flex-wrap: wrap;
+}
+.destacados h3{
+    width: 80%;
+    text-align: center;
+    font-family: OpenSans;
+    color: $colorPrimario;
+    font-size: 2rem;
+    margin: 20px;
+
+}
+.destacados__tarjeta{
+    @extend .flexBasico;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    border: 2px solid $colorPrimario;
+    background-color: #6c5ce780;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.destacados__tarjeta__puesto{
+    color: gold;
+    font-size: 1.3rem;
+    font-family: PressStart2P;
+}
+.destacados__tarjeta__nombre{
+    color: $colorSecundario;
+    font-size: 1rem;
+    font-family: OpenSans;
+}
+.destacados__tarjeta img{
+    max-height: 80%;
+    max-width: 90%;
+}
+
+@media (max-width: 700px){
+    .tituloInicio{
+        font-size: 4rem;
+    }
+    .eslogan{
+        font-size: 2.5rem;
+    }
+    .destacados h3{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 500px){
+    .tituloInicio{
+        font-size: 3.5rem;
+    }
+    .eslogan{
+        font-size: 2rem;
+    }
+    .destacados h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 420px){
+    .tituloInicio{
+        font-size: 2.5rem;
+    }
+    .eslogan{
+        font-size: 1.5rem;
+    }
+    .destacados h3{
+        font-size: 1rem;
+    }
+    .destacados__tarjeta{
+    width: 200px;
+    height: 200px;
+    }
+    .destacados__tarjeta img{
+    max-height: 120px;
+    }
+}
