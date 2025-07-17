@@ -1,0 +1,14 @@
+.flexBasico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botonBasico{
+    background-color: $colorPrimario;
+    color: $colorSecundario;
+    font-family: OpenSans;
+}
+.botonBasico:hover{
+    background-color: $colorSecundario;
+    color: $colorPrimario;
+}

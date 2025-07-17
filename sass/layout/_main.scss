@@ -1,0 +1,57 @@
+/* Index */
+.tituloInicio{
+    font-size: 6rem;
+    color: $colorPrimario;
+    font-family: PressStart2P;
+    text-align: center;
+    margin: 20px;
+}
+.tituloInicio span{
+    color: $colorSecundario;
+}
+.eslogan{
+    font-family: OpenSans;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.destacados{
+    @extend .flexBasico;
+    flex-wrap: wrap;
+}
+.destacados h3{
+    width: 80%;
+    text-align: center;
+    font-family: OpenSans;
+    color: $colorPrimario;
+    font-size: 2rem;
+    margin: 20px;
+
+}
+.destacados__tarjeta{
+    @extend .flexBasico;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    border: 2px solid $colorPrimario;
+    background-color: #6c5ce780;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+.destacados__tarjeta__puesto{
+    color: gold;
+    font-size: 1.3rem;
+    font-family: PressStart2P;
+}
+.destacados__tarjeta__nombre{
+    color: $colorSecundario;
+    font-size: 1rem;
+    font-family: OpenSans;
+}
+.destacados__tarjeta img{
+    max-height: 80%;
+    max-width: 90%;
+}

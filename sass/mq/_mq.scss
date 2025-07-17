@@ -1,0 +1,40 @@
+@media (max-width: 700px){
+    .tituloInicio{
+        font-size: 4rem;
+    }
+    .eslogan{
+        font-size: 2.5rem;
+    }
+    .destacados h3{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 500px){
+    .tituloInicio{
+        font-size: 3.5rem;
+    }
+    .eslogan{
+        font-size: 2rem;
+    }
+    .destacados h3{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 420px){
+    .tituloInicio{
+        font-size: 2.5rem;
+    }
+    .eslogan{
+        font-size: 1.5rem;
+    }
+    .destacados h3{
+        font-size: 1rem;
+    }
+    .destacados__tarjeta{
+    width: 200px;
+    height: 200px;
+    }
+    .destacados__tarjeta img{
+    max-height: 120px;
+    }
+}
