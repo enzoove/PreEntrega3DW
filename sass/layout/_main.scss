@@ -1,9 +1,6 @@
 /* Index */
 .tituloInicio{
     font-size: 6rem;
-    color: $colorPrimario;
-    font-family: PressStart2P;
-    text-align: center;
     margin: 20px;
 }
 .tituloInicio span{
@@ -54,4 +51,48 @@
 .destacados__tarjeta img{
     max-height: 80%;
     max-width: 90%;
+}
+
+/* Productos */
+.catalogo h2{
+    text-align: center;
+    font-family: OpenSans;
+    color: $colorSecundario;
+    margin: 15px;
+}
+
+.catalogo article{
+    @extend .flexBasico;
+    flex-wrap: wrap;
+}
+.catalogo article div{
+    @extend .flexBasico;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: OpenSans;
+    font-size: 1.5rem;
+    background-color: #6c5ce742;
+    border: 2px $colorPrimario solid;
+    padding: 8px;
+    width: 321px;
+    height: 350px;
+    margin: 20px auto;
+}
+.catalogo article div img{
+    max-height: 180px;
+}
+.nombreProducto{
+    color: $colorSecundario;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.precio{
+    color: #28a745;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.botonComprar{
+    @extend .botonBasico;
 }

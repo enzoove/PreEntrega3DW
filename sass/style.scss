@@ -6,7 +6,11 @@ body{
     background-image: url(../img/assets/background.webp);
     color: $colorBlanco;
 }
-
+h1{
+    text-align: center;
+    font-family: PressStart2P;
+    color: $colorPrimario;
+}
 @import "./layout/header";
 @import "./layout/main";
 @import "./layout/footer";

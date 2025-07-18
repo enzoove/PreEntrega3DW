@@ -1,16 +1,16 @@
-.flexBasico, .destacados__tarjeta, .destacados {
+.flexBasico, .catalogo article div, .catalogo article, .destacados__tarjeta, .destacados {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.botonBasico {
+.botonBasico, .botonComprar {
   background-color: #6c5ce7;
   color: #00cec9;
   font-family: OpenSans;
 }
 
-.botonBasico:hover {
+.botonBasico:hover, .botonComprar:hover {
   background-color: #00cec9;
   color: #6c5ce7;
 }
@@ -26,6 +26,12 @@
 body {
   background-image: url(../img/assets/background.webp);
   color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  font-family: PressStart2P;
+  color: #6c5ce7;
 }
 
 .logo {
@@ -67,9 +73,6 @@ body {
 /* Index */
 .tituloInicio {
   font-size: 6rem;
-  color: #6c5ce7;
-  font-family: PressStart2P;
-  text-align: center;
   margin: 20px;
 }
 
@@ -126,8 +129,60 @@ body {
   max-width: 90%;
 }
 
+/* Productos */
+.catalogo h2 {
+  text-align: center;
+  font-family: OpenSans;
+  color: #00cec9;
+  margin: 15px;
+}
+
+.catalogo article {
+  flex-wrap: wrap;
+}
+
+.catalogo article div {
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: OpenSans;
+  font-size: 1.5rem;
+  background-color: rgba(108, 92, 231, 0.2588235294);
+  border: 2px #6c5ce7 solid;
+  padding: 8px;
+  width: 321px;
+  height: 350px;
+  margin: 20px auto;
+}
+
+.catalogo article div img {
+  max-height: 180px;
+}
+
+.nombreProducto {
+  color: #00cec9;
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.precio {
+  color: #28a745;
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 footer {
   width: 100%;
+}
+
+footer p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 1rem;
+  font-family: OpenSans;
+  text-align: center;
+  background-color: rgba(108, 92, 231, 0.2);
 }
 
 @media (max-width: 700px) {
