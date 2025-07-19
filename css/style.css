@@ -178,6 +178,7 @@ h1 {
   border: #6c5ce7 3px solid;
   border-radius: 5%;
   margin: auto;
+  background-color: rgba(108, 92, 231, 0.2588235294);
 }
 
 .formularioContacto label {
