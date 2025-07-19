@@ -1,16 +1,16 @@
-.flexBasico, .catalogo article div, .catalogo article, .destacados__tarjeta, .destacados {
+.flexBasico, .formularioContacto, .catalogo article div, .catalogo article, .destacados__tarjeta, .destacados {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.botonBasico, .botonComprar {
+.botonBasico, .formularioContacto button, .botonComprar {
   background-color: #6c5ce7;
   color: #00cec9;
   font-family: OpenSans;
 }
 
-.botonBasico:hover, .botonComprar:hover {
+.botonBasico:hover, .formularioContacto button:hover, .botonComprar:hover {
   background-color: #00cec9;
   color: #6c5ce7;
 }
@@ -169,6 +169,32 @@ h1 {
   color: #28a745;
   margin-bottom: 10px;
   font-size: 2rem;
+  font-weight: bold;
+}
+
+.formularioContacto {
+  flex-direction: column;
+  width: 300px;
+  border: #6c5ce7 3px solid;
+  border-radius: 5%;
+  margin: auto;
+}
+
+.formularioContacto label {
+  color: #00cec9;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.formularioContacto input, .formularioContacto textarea {
+  background-color: rgba(0, 206, 203, 0.7137254902);
+  border: #6c5ce7 2px solid;
+  color: #ffffff;
+  width: 250px;
+}
+
+.formularioContacto button {
+  margin: 15px auto;
   font-weight: bold;
 }
 

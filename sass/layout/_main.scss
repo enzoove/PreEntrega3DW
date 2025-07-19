@@ -96,3 +96,29 @@
 .botonComprar{
     @extend .botonBasico;
 }
+
+// Contacto
+.formularioContacto{
+    @extend .flexBasico;
+    flex-direction: column;
+    width: 300px;
+    border: $colorPrimario 3px solid;
+    border-radius: 5%;
+    margin: auto;
+}
+.formularioContacto label{
+    color: $colorSecundario;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.formularioContacto input, .formularioContacto textarea{
+    background-color: #00cecbb6;
+    border: $colorPrimario 2px solid;
+    color: $colorBlanco;
+    width: 250px;
+}
+.formularioContacto button{
+    @extend .botonBasico;
+    margin: 15px auto;
+    font-weight: bold;
+}
