@@ -1,4 +1,4 @@
-.flexBasico, .formularioContacto, .catalogo article div, .catalogo article, .destacados__tarjeta, .destacados {
+.flexBasico, .formularioContacto, .novedades__tarjeta, .novedades, .catalogo article div, .catalogo article, .destacados__tarjeta, .destacados {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,6 +170,35 @@ h1 {
   margin-bottom: 10px;
   font-size: 2rem;
   font-weight: bold;
+}
+
+.novedades {
+  flex-wrap: wrap;
+  text-align: center;
+  font-family: OpenSans;
+}
+
+.novedades__tarjeta {
+  flex-direction: column;
+  background-color: rgba(108, 92, 231, 0.2588235294);
+  height: 270px;
+  width: 680px;
+}
+
+.novedades__tarjeta h2 {
+  color: #6c5ce7;
+  font-size: 1.5rem;
+  height: 50px;
+}
+
+.novedades__tarjeta__fecha {
+  color: #00cec9;
+  font-size: 1.2rem;
+}
+
+.novedades__tarjeta p {
+  text-align: justify;
+  font-size: 1rem;
 }
 
 .formularioContacto {

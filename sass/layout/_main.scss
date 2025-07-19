@@ -97,6 +97,34 @@
     @extend .botonBasico;
 }
 
+// Novedades
+.novedades{
+    @extend .flexBasico;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: OpenSans;
+}
+.novedades__tarjeta{
+    @extend .flexBasico;
+    flex-direction: column;
+    background-color: #6c5ce742;
+    height: 270px;
+    width: 680px;
+}
+.novedades__tarjeta h2{
+    color: $colorPrimario;
+    font-size: 1.5rem;
+    height: 50px;
+}
+.novedades__tarjeta__fecha{
+    color: $colorSecundario;
+    font-size: 1.2rem;
+}
+.novedades__tarjeta p{
+    text-align: justify;
+    font-size: 1rem;
+}
+
 // Contacto
 .formularioContacto{
     @extend .flexBasico;
