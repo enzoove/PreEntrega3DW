@@ -125,6 +125,31 @@
     font-size: 1rem;
 }
 
+// Sobre Nosotros
+.sobreNosotros{
+    @extend .flexBasico;
+    flex-wrap: wrap;
+    font-family: OpenSans;
+}
+.sobreNosotros h2{
+    font-weight: bold;
+    font-size: 2rem;
+    color: $colorSecundario;
+    text-align: center;
+    width: 100%;
+}
+.sobreNosotros p{
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 700px;
+    margin: 20px auto;
+}
+.sobreNosotros img{
+    height: 500px;
+    margin: auto;
+    border: 1px solid $colorPrimario;
+}
+
 // Contacto
 .formularioContacto{
     @extend .flexBasico;
