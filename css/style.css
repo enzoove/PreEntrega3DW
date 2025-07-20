@@ -183,6 +183,7 @@ h1 {
   background-color: rgba(108, 92, 231, 0.2588235294);
   height: 270px;
   width: 680px;
+  padding: 10px;
 }
 
 .novedades__tarjeta h2 {
@@ -219,6 +220,7 @@ h1 {
   text-align: justify;
   width: 700px;
   margin: 20px auto;
+  padding: 10px;
 }
 
 .sobreNosotros img {
@@ -290,6 +292,9 @@ footer p {
   }
   .sobreNosotros img {
     width: 95%;
+  }
+  .novedades__tarjeta {
+    height: 350px;
   }
 }
 @media (max-width: 420px) {
