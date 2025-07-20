@@ -108,9 +108,11 @@
     @extend .flexBasico;
     flex-direction: column;
     background-color: #6c5ce742;
-    height: 270px;
-    width: 680px;
+    height: 250px;
+    width: 650px;
     padding: 10px;
+    border: 1px $colorSecundario solid;
+    margin: 10px auto;
 }
 .novedades__tarjeta h2{
     color: $colorPrimario;
